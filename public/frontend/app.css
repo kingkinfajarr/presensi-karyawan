@@ -1,0 +1,70 @@
+body {
+  font-family: 'Poppins', sans-serif !important;
+}
+section{
+  height: 515px;
+}
+footer{
+  font-weight: 600;
+}
+
+.btn-daftar{
+  background-color: #FFE600 !important;
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #181616;
+  font-weight: 600;
+}
+.btn-masuk{
+  background-color: #FFFBD2;
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #181616;
+  font-weight: 600;
+}
+.text-content{
+  font-weight: 700;
+  font-size: 58px;
+  padding-bottom: 40px;
+  padding-top: 150px;
+}
+.btn-presensi{
+  background-color: #FFE600 !important;
+  padding: 10px 40px !important;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #181616;
+  font-weight: 600 !important;
+  text-decoration-color: none;
+}
+.content {
+  padding-top: 120px;
+}
+.card{
+  margin-bottom: 40px;
+}
+.card-header{
+  font-size: 24px;
+  font-weight: 600;
+}
+.text-content-presensi{
+  font-size: 54px;
+  font-weight: 700;
+}
+.img-avatar{
+  border-radius: 100%;
+  width: 35px;
+  margin-right: 4px;
+}
+.nama-user{
+  margin-right: 4px;
+}
+.btn-logout{
+  color: #181616 !important;
+  background-color: #FFE600 !important;
+  padding: 5px 10px !important;
+  margin-left: 10px;
+  border-radius: 5px;
+}
