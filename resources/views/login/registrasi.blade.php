@@ -27,7 +27,7 @@
       <form action="{{ route('post-registrasi') }}" method="post">
         @csrf
         <div class="input-group mb-3">
-          <input type="text" class="form-control" name="name" placeholder="Full name">
+          <input type="text" class="form-control" name="name" placeholder="Nama Lengkap" required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user"></span>
@@ -35,7 +35,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="email" class="form-control" name="email" placeholder="Email">
+          <input type="email" class="form-control" name="email" placeholder="Email" required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -43,7 +43,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" name="password" placeholder="Password">
+          <input type="password" class="form-control" name="password" placeholder="Password" required minlength="8">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -55,13 +55,13 @@
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Daftar</button>
+            <button type="submit" class="btn btn-block" style="background-color: #FFE600">Daftar</button>
           </div>
           <!-- /.col -->
         </div>
       </form>
 
-
+      <br>
       <a href="{{ route('login') }}" class="text-center">Sudah punya akun? masuk sekarang</a>
     </div>
     <!-- /.form-box -->

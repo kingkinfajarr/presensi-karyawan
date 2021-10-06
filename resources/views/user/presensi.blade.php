@@ -41,7 +41,7 @@
         <h1 class="text-content-presensi pb-4">Silahkan Pilih Menu</h1>
         <a href="{{ route('presensi-masuk') }}" class="btn btn-presensi">Presensi Masuk</a> &nbsp; &nbsp;&nbsp; 
         <a href="{{ route('presensi-keluar') }}" class="btn btn-presensi">Presensi Keluar</a> <br>
-        {{-- <a href="{{ route('rekap-presensi') }}" class="btn btn-presensi mt-4">Lihat Rekap Presensi</a> --}}
+        <a href="" onclick="this.href='/rekap-presensi/' " class="btn btn-presensi mt-4">Lihat Rekap Presensi</a>
       </div>
     </div>
   </section>

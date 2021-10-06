@@ -48,13 +48,14 @@
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Masuk</button>
+            <button type="submit" class="btn btn-block" style="background-color: #FFE600">Masuk</button>
           </div>
           <!-- /.col -->
         </div>
       </form>
 
       <p class="mb-0">
+        <br>
         <a href="{{ route('registrasi') }}" class="text-center">Belum punya akun? daftar sekarang</a>
       </p>
     </div>

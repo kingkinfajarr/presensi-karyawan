@@ -15,13 +15,13 @@
   <nav>
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container container-fluid">
-        <a class="navbar-brand" href="{{ url('/') }}">
+        <a class="navbar-brand" href="{{ route('presensi') }}">
           <img src="{{ asset('frontend/img/logo.png') }}" alt="Logo-Presensi" width="120px">
         </a>
         <div class="collapse navbar-collapse justify-content-center">
           <div class="navbar-nav pl-auto pr-auto">
-            <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
-            <a class="nav-link active" href="presensi.html">Presensi</a>
+            <a class="nav-link" aria-current="page" href="{{ route('presensi') }}">Beranda</a>
+            <a class="nav-link active" href="{{ route('presensi') }}">Presensi</a>
           </div>
         </div>
         <div class="button ml-auto">
@@ -41,7 +41,6 @@
         <table class="table">
           <thead>
             <tr>
-              <th scope="col">ID</th>
               <th scope="col">Nama Karyawan</th>
               <th scope="col">Tanggal</th>
               <th scope="col">Jam Masuk</th>
@@ -50,15 +49,16 @@
             </tr>
           </thead>
           <tbody>
-            @foreach ($presensi as $item)    
+            @foreach ($presensi as $item)  
+            @if ($item->user->name == auth()->user()->name)    
               <tr>
-                <th scope="row">{{ $item->id }}</th>
                 <td>{{ $item->user->name }}</td>
                 <td>{{ $item->tgl }}</td>
                 <td>{{ $item->jam_masuk }}</td>
                 <td>{{ $item->jam_keluar }}</td>
                 <td>{{ $item->jam_kerja }}</td>
               </tr>
+            @endif  
             @endforeach
           </tbody>
         </table>
