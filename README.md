@@ -16,6 +16,6 @@ $ start server : php artisan serve
 ```
 
 ## Credits
-  - Bootstrap
-  - Laravel
+  - [Bootstrap](https://getbootstrap.com/)
+  - [Laravel](https://laravel.com/)
 
