@@ -31,14 +31,6 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="{{ route('rekap-presensi-admin') }}" class="nav-link">
-            <i class="fas fa-print"></i>
-            <p>
-              Cetak Daftar Gaji 
-            </p>
-          </a>
-        </li>
-        <li class="nav-item">
           <a href="{{ route('logout') }}" class="nav-link">
             <i class="fas fa-sign-out-alt"></i>
             <p>
